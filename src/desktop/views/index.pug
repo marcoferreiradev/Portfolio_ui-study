@@ -5,12 +5,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Portfolio-UI
-        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(type="text/css" rel="stylesheet" href="../css/common.css")
+        link(type="text/css" rel="stylesheet" href="../css/works.css")
     body
         section(class="portfolio-container")
             include ./partials/newsletter.pug
             include ./partials/navfor.pug 
             include ./partials/main.pug
-        script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
-        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous")
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        //- script(type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(type="text/javascript" src="../js/index.js")
