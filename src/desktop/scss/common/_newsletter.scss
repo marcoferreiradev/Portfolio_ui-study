@@ -1,0 +1,69 @@
+.portfolio{
+    &__newsletter{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 65px;
+        padding-bottom: 3%;    
+        border-right: 1.5px solid rgba($white-base,0.6);
+        &--lang{
+            width: 100%;
+            writing-mode: vertical-rl;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            // align-items: center;
+            &-item{
+                width: 100%;
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                font-family: $font-primary-regular;
+                cursor: pointer;
+                font-size:16px;
+                color: $text-white;
+                &.is--active{
+                    font-weight: bold;
+                }
+                &.separator{
+                    cursor: default;
+                }
+            }
+        }
+        &--social{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            &-media{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-family: $font-primary-regular;
+                font-size:16px;
+                color: $text-white;
+                &:not(:last-child){
+                    margin-bottom: 52px;
+                }
+                &-link{
+                    width: 100%;
+                    text-decoration: none;
+                    transition:  all  linear;
+                    &:visited{
+                        color: $text-white;
+                    }
+                    &:hover{
+                        font-weight: bolder;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
