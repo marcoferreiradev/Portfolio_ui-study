@@ -1,0 +1,39 @@
+@import '../../../common/variables.scss';
+
+.portfolio{
+    &__navfor{
+        width: 13%;
+        padding-top: 81px;
+        // overflow: hidden;
+        border-right: 1.5px solid rgba($white-base,0.6);
+        &--images{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            &-list{
+                width: 190px;
+                height: 93%;
+                padding: 0 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                &-item{
+                    // width: 170px;
+                    // height: 197px;
+                    width: 79%;
+                    // border: 1px solid red;
+                    overflow: hidden;
+                    &:not(:last-child){
+                        // margin-bottom: 47px;
+                        margin-bottom: 20%;
+                    }
+                    &-img{
+                        max-width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

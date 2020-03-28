@@ -9,7 +9,7 @@ const pug = require('gulp-pug');
 const filesDesktop = {
     scssPath:'./src/desktop/scss/**/*.scss',
     jsPath:'./src/desktop/js/*.js',
-    pugPath:'./src/desktop/views/*.*'
+    pugPath:'./src/desktop/views/**/*.*'
 }
 function scssTaskDesktop(){
     return src('./src/desktop/scss/*.scss')
