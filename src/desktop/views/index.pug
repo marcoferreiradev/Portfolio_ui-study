@@ -5,11 +5,12 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Portfolio-UI
+        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
     body
-      section(class="portfolio-container")
-          include ./partials/newsletter.pug
-          include ./partials/navfor.pug 
-          include ./partials/main.pug
-
-    block scripts
-        script(src=)
+        section(class="portfolio-container")
+            include ./partials/newsletter.pug
+            include ./partials/navfor.pug 
+            include ./partials/main.pug
+        script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
