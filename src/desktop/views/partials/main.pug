@@ -1,2 +1,32 @@
-div(class="testando")
-    P vamo que vamo
+main(class='portfolio__main')
+    include ../common/header.pug
+    article(class='portfolio__content')
+        div(class='porfolio__collection')
+            div(class='porfolio__collection--counter')
+                span(class='porfolio__collection--counter-number collectionIndex')  02
+                span(class='porfolio__collection--counter-separator') / 
+                span(class='porfolio__collection--counter-number collectionTotal')  07
+            div(class='porfolio__collection--main')
+                ul(class='porfolio__collection--main-block')
+                    li(class='portfolio__collection--main-block-galery')
+                        div(class='portfolio__collection--photos')
+                            div(class='portfolio__collection--photos-block-one')
+                                img(class='portfolio__collection--photos-block-one-img')
+                            div(class='portfolio__collection--photos-block-two')
+                                img(class='portfolio__collection--photos-block-two-img' alt='' title='' src='#')/
+                                img(class='portfolio__collection--photos-block-two-img' alt='' title='' src='#')/
+                        div(class='portfolio__collection--about')
+                            div(class='portfolio__collection--about-title')
+                                h2 About.
+                            div(class='portfolio__collection--about-text')
+                                p.
+                                    Mauris vulputate a magna a ullamcorper. Morbi pretium 
+                                    nunc ipsum, a maximus ex accumsan non. Nullam turpis 
+                                    nunc, facilisis finibus efficitur eu, gravida volutpat 
+                                    turpis. Sed non lorem ut augue fermentum fermentum 
+                                    sed ac eros. Vivamus vel justo nisl. Suspendisse et 
+                                    auctor risus, ac consectetur massa.
+                            div(class='portfolio__collection--about-more')
+                                a(class='portolio__collection--btn' href='#') View more
+
+
