@@ -35,9 +35,11 @@
             &-block{
                 width: 960px;
                 display: flex;
+                flex-direction: column;
+                overflow: hidden;
                 align-items: center;
                 &-galery{
-                    width: 100%;
+                    width: 960px;
                     display: flex;
                     justify-content: space-between;
                     .portfolio__collection{
@@ -49,7 +51,8 @@
                                 width: 64%;
                                 &-img{
                                     max-width: 100%;
-                                    object-fit: contain;
+                                    height: 391px;
+                                    object-fit: cover;
                                 }
                             }
                             &-block-two{
