@@ -1,0 +1,30 @@
+@import '../../../common/variables.scss';
+
+.portfolio{
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__collection{
+        width: 87%;
+        &--counter{
+            width: 128px;
+            position: relative;
+            margin-top: 78px;
+            font-family: $font-primary-regular;
+            font-size: 18px;
+            color: $text-white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::before{
+                content:'';
+                width: 42px;
+                height: 2px;
+                background: $white-base;
+                left: 0;
+            }
+        }
+    }
+}
