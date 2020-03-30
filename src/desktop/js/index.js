@@ -3,6 +3,7 @@ const methods = {
     init(){
         methods.slickCounter();
         methods.slickGallery();
+        methods.slickGoto();
     },
     slickCounter(){
         let currentSlide;
@@ -41,14 +42,16 @@ const methods = {
             asNavFor:'.portfolio__navfor--images-list',
             arrows:false,
         });
+    },
+    slickGoto(){
+        $('.portfolio__navfor--images-list').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+        
+            $('.portfolio__collection--main-block').slick('slickGoTo', goToSingleSlide);
+        });
     }
 }
-
-// $(document).load( function() {
-//     console.log('dadasdas');
-//     methods.init();
-// });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     methods.init();
