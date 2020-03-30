@@ -26,9 +26,10 @@
                     height: 84px;
                     background: #fff;
                     right: -3px;
-                    top: 40%;
+                    top: 43%;
                 }
                 &-item{
+                    width: 122px !important;
                     position: relative;
                     width: 95%;
                     overflow: hidden;
@@ -43,6 +44,14 @@
                     &.slick-active{
                         // padding: 4px;
                         background: $white-base;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 90%;
+                            height: 93%;
+                            top: 0;
+                            border:6px solid $white-base;
+                        }
                     }
                 }
             }
