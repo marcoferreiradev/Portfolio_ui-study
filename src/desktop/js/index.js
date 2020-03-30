@@ -1,7 +1,25 @@
 
 const methods = {
     init(){
+        methods.slickCounter();
         methods.slickGallery();
+    },
+    slickCounter(){
+        let currentSlide;
+        let slidesTotal;
+
+        const updateSliderCounter = (slick,currentIndex) => {
+            currentSlide = slick.slickCurrentSlide() +1;
+            slidesTotal = slick.slideCount;
+            $('.collectionIndex').text('0'+currentSlide);
+            $('.collectionTotal').text('0'+slidesTotal);
+        }
+        $('.portfolio__collection--main-block').on('init',function(event,slick){
+            updateSliderCounter(slick);
+        });
+        $('.portfolio__collection--main-block').on('afterChange', function(event, slick, currentSlide) {
+            updateSliderCounter(slick, currentSlide);
+        });
     },
     slickGallery(){
         $('.portfolio__navfor--images-list').slick({
