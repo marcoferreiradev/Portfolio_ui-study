@@ -3,7 +3,7 @@
 .portfolio{
     &__navfor{
         width: 10.5%;
-        padding-top: 81px;
+        padding-top: 63px;
         // overflow: hidden;
         border-right: 1.5px solid rgba($white-base,0.6);
         &--images{
@@ -13,17 +13,24 @@
             &-list{
                 width: 190px;
                 // height: 93%;
-                height: 81vh;
+                height: 83vh;
                 padding: 0 10px;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
                 align-items: center;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 84px;
+                    background: #fff;
+                    right: -3px;
+                    top: 40%;
+                }
                 &-item{
-                    // width: 170px;
-                    // height: 197px;
+                    position: relative;
                     width: 95%;
-                    // border: 1px solid red;
                     overflow: hidden;
                     &:not(:last-child){
                         // margin-bottom: 47px;
@@ -33,6 +40,44 @@
                         max-width: 100%;
                         object-fit: cover;
                     }
+                    &.slick-active{
+                        // padding: 4px;
+                        background: $white-base;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.portfolio__navfor{
+    &--arrow{
+        width: 100%;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: solid $white-base;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 8px;
+            cursor: pointer;
+        }
+        &.arrow{
+            &-prev{
+                &::after{
+                    transform: rotate(-135deg);
+                    left: 43%;
+                    top: -20px;
+                }
+            }
+            &-next{
+                &::after{
+                    transform: rotate(45deg);
+                    left: 43%;
                 }
             }
         }

@@ -6,9 +6,14 @@ const methods = {
     slickGallery(){
         $('.portfolio__navfor--images-list').slick({
             vertical:true,
+            centerMode:true,
+            centerPadding: '196px',
             slideToShow:3,
             slideToScroll:1,
+            verticalSwiping:true,
             arrows:true,
+            prevArrow:'.arrow-prev',
+            nextArrow:'.arrow-next',
             asNavFor:'.portfolio__collection--main-block',
         });
         $('.portfolio__collection--main-block').slick({
