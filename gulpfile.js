@@ -24,7 +24,7 @@ function jsTaskDesktop(){
 function pugTaskDesktop(){
     return src('./src/desktop/views/*.*')
         .pipe(pug({pretty: "\t"}))
-        .pipe(dest("./dist/desktop/views"));
+        .pipe(dest("./"));
 }
 
 function watchTask(){
